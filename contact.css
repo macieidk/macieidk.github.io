@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+#container {
+  width: 100%;
+}
+
+body {
+  text-transform: lowercase;
+  width: 100%;
+  background-color: #f4f4ef;
+}
+
+
+#heading {
+  background-image:url(floralbg.jpg);
+  position: relative;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+#heading ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+}
+#heading ul li a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+#heading a:hover {
+  background-color: #f4f4ef;
+  color: black;
+}
+
+li {
+  float: left;
+  font-family: 'Source Sans Pro', sans- serif;
+  padding: 10px;
+  font-size: 16px;
+  padding: 8x 10x;
+
+} 
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans- serif;
+  font-size: 16px;
+
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;    
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+  background-color: #f4f4ef;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#fbf7f5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#chat {
+  font-family: 'Amatic SC', cursive;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+
+h3 {
+ font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold; 
+  margin-top: 1
+}
+
+input[type=submit] {
+  background-color: #DCDC9B;
+  color: black;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=reset] {
+  background-color: #DCDC9B;
+  color: black;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+
+
+input[type=submit]:hover {
+  background-color: #D2D98C;
+}
+
+input[type=reset]:hover {
+  background-color: #D2D98C;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: .5%; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-bottom: .5%; 
+  resize: vertical;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 0 5;
+}
+
+#letschat {
+  margin-left: 25%;
+  margin-right: 35%;
+}
+
+.label {
+  font-size: 11px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 2%;
+}
+
+#fname, #lname {
+  width: 15%;
+  float: left;
+  margin-left: 1%;
+}
+
+footer {
+  position:relative;
+  bottom:0;
+  width:100%;
+  height:3%; 
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+
+}
+
+@media screen and (max-width: 421px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;  
+  }
+
+  h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 45px;
+    padding: 0 5px; 
+    margin-bottom: 0px;
+  }
+
+
+  #heading ul {
+    width: 85%; 
+    margin-left: 2%;
+    margin-right: 15%; 
+    padding: 1px;
+    list-style-type: none;
+    position: static;
+    display: grid; 
+    text-align: center; 
+    padding-bottom: 5px 
+
+
+  }
+
+  #heading ul li {
+    padding: 0;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+
+
+  #heading ul li a {
+    font-size: 14px; 
+  }
+
+
+  .dropdown {
+    font-size: 14px;
+
+  }
+
+  .dropdown .dropbtn {
+    font-size: 14px;    
+    padding: 2px 10px;
+
+  }
+
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+    #fname, #lname {
+      width: 70%; 
+      margin-left: 1%;
+      margin-bottom: 5%;
+    }
+  #letschat {
+    margin-left: 10%;
+    margin-right: 35%;
+  }
+
+  footer {
+    position: relative;
+  }
+
+}
+
+
